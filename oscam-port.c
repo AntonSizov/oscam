@@ -18,7 +18,7 @@ static size_t packet_size(byte_t buff[ERL_MSG_HEADER_SIZE]) {
 }
 
 int main(int argc, char** argv) {
-	volatile bool bShutdown = false;
+	bool bShutdown = false;
 	fprintf(stderr, "Entering the loop.\n");
 	while ( !bShutdown ) {
 		byte_t packet_size_buff[ERL_MSG_HEADER_SIZE];
